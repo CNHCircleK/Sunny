@@ -1,7 +1,7 @@
 
 var Discord = require('discord.io');
 var logger = require('winston');
-var auth = require('./auth.json');
+var auth = require('./../auth.json');
 var commands = require('./commands.js').cmdList;
 var VCID = auth.kappa_token;
 
@@ -25,7 +25,7 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
     bot.setPresence({
         game:{
-            name: "Rapgod"
+            name: "Service, Leadership, and Fellowship"
         }
     });
 });
@@ -62,15 +62,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     });
                 }
             }, bot, VCID, user);
-            bot.addReaction({
-            channelID: channelID,
-            messageID: evt.d.id,
-            //reaction: "goldogre:308029606013960192"
-            }, function(err, res) {
-                if (err) {
-                    console.log(err);
-                    throw err; }
-            });
+            // bot.addReaction({
+            // channelID: channelID,
+            // messageID: evt.d.id,
+            // //reaction: "goldogre:308029606013960192"
+            // }, function(err, res) {
+            //     if (err) {
+            //         console.log(err);
+            //         throw err; }
+            // });
         }
 
         else if (cmd == "dismiss"){
@@ -116,15 +116,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 to: channelID,
                 message: "```Not a valid command! Try !help for a list of commands.```"
             });
-            bot.addReaction({
-            channelID: channelID,
-            messageID: evt.d.id,
-            //reaction: "face:294574806815342593"
-            }, function(err, res) {
-                if (err) {
-                    console.log(err);
-                    throw err; }
-            });
+            // bot.addReaction({
+            // channelID: channelID,
+            // messageID: evt.d.id,
+            // reaction: "face:294574806815342593"
+            // }, function(err, res) {
+            //     if (err) {
+            //         console.log(err);
+            //         throw err; }
+            // });
         }
 
 
