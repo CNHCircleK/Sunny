@@ -43,7 +43,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     if (message.substring(0, 1) == '!') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
-       
+
         args = args.splice(1);
         console.log(cmd);
 
@@ -54,10 +54,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                         to: channelID,
                         message: result,
                         typing: 1000
-                    }, function(err, res){ 
+                    }, function(err, res){
                         if (err) {
                         console.log(err);
-                        throw err; 
+                        throw err;
                         }
                     });
                 }
@@ -65,9 +65,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             bot.addReaction({
             channelID: channelID,
             messageID: evt.d.id,
-            reaction: "goldogre:308029606013960192"
+            //reaction: "goldogre:308029606013960192"
             }, function(err, res) {
-                if (err) { 
+                if (err) {
                     console.log(err);
                     throw err; }
             });
@@ -90,10 +90,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: `SEE YA ${args[0]}`,
                     typing: 1000
-                }, function(err, res){ 
+                }, function(err, res){
                     if (err) {
                     console.log(err);
-                    throw err; 
+                    throw err;
                     }
                 });
                 bot.moveUserTo({
@@ -119,19 +119,18 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             bot.addReaction({
             channelID: channelID,
             messageID: evt.d.id,
-            reaction: "face:294574806815342593"
+            //reaction: "face:294574806815342593"
             }, function(err, res) {
-                if (err) { 
+                if (err) {
                     console.log(err);
                     throw err; }
             });
         }
-        
+
 
 
 
             // Just add any case commands if you want to..
-         
+
      }
 });
-
