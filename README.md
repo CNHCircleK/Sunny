@@ -1,4 +1,4 @@
-# Luxanna
+# Sunny
 
 *"Lighting the way"*
 
@@ -44,4 +44,4 @@ Searches Google and returns the first image result from the given query.
 
 ## Legal
 
-I do not own League of Legends nor am affiliated with Riot, and I do not own nor am affiliated with Discord.
+We do not own nor are affiliated with Discord.
