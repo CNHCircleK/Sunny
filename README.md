@@ -1,4 +1,5 @@
-# Sunny
+<p align="center"><img src="./assets/images/sunny-discord.png"></p>
+<h1 align="center">Sunny</h1>
 
 *"Lighting the way"*
 
