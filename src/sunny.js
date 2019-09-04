@@ -25,7 +25,7 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
     bot.setPresence({
         game:{
-            name: "Service, Leadership, and Fellowship"
+            name: "Teamfight Tactics"
         }
     });
 });

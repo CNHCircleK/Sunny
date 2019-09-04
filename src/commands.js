@@ -8,8 +8,8 @@ var championgg = require('./championgg.js');
 
 
 const cmdList = {
-	//"google": google.googleWeb,
-	//"img": google.googleImage,
+	"google": google.googleWeb,
+	"img": google.googleImage,
 	//"ult": elements.ult,
 	//"laugh": elements.laugh,
 	"status": statusmsg,
